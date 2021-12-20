@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -6,14 +7,18 @@
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
 }
+
+html {
+  font-size: 88%;
+}
+
 body {
   background: #151719;
 }
 
 /***preloader*******/
 #preloader {
-  background: #000 url(../images/f59876d316abc628202df9012706d68f.gif) no-repeat
-    center center;
+  background: #000 url(../images/f59876d316abc628202df9012706d68f.gif) no-repeat center center;
   background-size: 15%;
   height: 100vh;
   width: 100%;
@@ -22,16 +27,42 @@ body {
 }
 
 /*****end of preloader********/
+/***** start scroll to top btn *****/
+.scroll-to-top-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #000;
+  background-color: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  transform: translateX(150%);
+  transition: .4s;
+}
+
+.scroll-to-top-btn.show-btn {
+  transform: translateX(0%);
+}
+
+/***** end scroll to top btn *****/
 
 /*******Modal********/
 .modal-content {
   background-color: #25282c;
 }
+
 .modal-footer,
 .modal-body,
 .close {
   color: #fff;
 }
+
 .form-title {
   margin: 1rem 0rem 1rem;
 }
@@ -58,14 +89,17 @@ body {
 nav img {
   width: 100px;
 }
+
 .navbar .navbar-nav .nav-item {
   padding-right: 3.5rem;
 }
+
 .navbar .navbar-nav .nav-item a {
   font-size: 1.05em;
   font-weight: 500;
   color: #95a5a6;
 }
+
 .navbar .btn {
   background: #6163ff;
   padding: 0.1rem 1.7rem;
@@ -82,14 +116,16 @@ nav img {
   color: #e7e8ee;
 }
 
-.banner > h1::after {
+.banner>h1::after {
   content: "startup";
   color: #5658dd;
 }
+
 .banner h1 {
   color: #eceded;
   font-weight: 900;
 }
+
 .banner p {
   min-width: 60%;
   color: #97a4ae;
@@ -104,6 +140,7 @@ nav img {
   width: 120px;
   height: 40px;
 }
+
 .banner button:nth-child(2) {
   background: #25282c;
   color: #e7e8ee;
@@ -111,11 +148,12 @@ nav img {
   height: 40px;
 }
 
-.banner .text2 {
+.text2 {
   font-weight: 900;
   font-size: 3rem;
   color: #e7e8ee;
 }
+
 /*********features*****************/
 .features img {
   width: 50px;
@@ -127,68 +165,71 @@ nav img {
   -o-border-radius: 50px;
   background: #8c8c99;
 }
+
 .features h3 {
   color: #eceded;
   font-weight: 700;
 }
+
 .features P {
   color: #97a4ae;
   font-weight: 500;
   font-size: 1.1rem;
 }
-.features > .container .row > .col-md-4 > div:hover {
+
+.features>.container .row>.col-md-4>div {
+  transition: .3s;
+}
+
+.features>.container .row>.col-md-4>div:hover {
   background: rgb(53, 42, 42);
 }
-.features hr {
-  background-color: rgb(88, 85, 85);
-}
+
 /****about section**********/
-.about .title p {
-  min-width: 60%;
-  color: #97a4ae;
-  font-size: 1.3rem;
-  font-weight: 400;
-  word-spacing: 0.01rem;
-}
 .about .leftside-title h6 {
   text-transform: uppercase;
   color: #5658dd;
   font-weight: 600;
   font-size: 0.9rem;
 }
+
 .about .leftside-title h1 {
   color: #e7e8ee;
   font-weight: 900;
   font-size: 2.2rem;
 }
+
 .about .leftside-title p {
-  min-width: 60%;
   color: #97a4ae;
   font-size: 1.3rem;
   font-weight: 400;
   word-spacing: 0.01rem;
 }
-.about hr {
-  background-color: rgb(88, 85, 85);
+
+/****counter section**********/
+.counter-section .counter {
+  color: #fff;
+  font-size: 2rem;
+  display: inline-block;
 }
+
+.counter-section .counter-heading {
+  color: #fff;
+  margin: 0;
+}
+
 /****customer-testidivomonial******/
-.customer-title p {
-  min-width: 60%;
-  color: #97a4ae;
-  font-size: 1.3rem;
-  font-weight: 400;
-  word-spacing: 0.01rem;
-}
 .customer {
   padding: 1rem 1.7rem;
   background-color: #25282c;
   color: #fff;
-  transition: 0.8 all ease-in-out;
-  -webkit-transition: 0.8 all ease-in-out;
-  -moz-transition: 0.8 all ease-in-out;
-  -ms-transition: 0.8 all ease-in-out;
-  -o-transition: 0.8 all ease-in-out;
+  transition: .3s all ease-in-out;
+  -webkit-transition: .3s all ease-in-out;
+  -moz-transition: .3s all ease-in-out;
+  -ms-transition: .3s all ease-in-out;
+  -o-transition: .3s all ease-in-out;
 }
+
 .customer:hover {
   transform: scale(0.9);
   -webkit-transform: scale(0.9);
@@ -196,56 +237,59 @@ nav img {
   -ms-transform: scale(0.9);
   -o-transform: scale(0.9);
 }
+
 .customer i {
   color: #6163ff;
   font-size: 2rem;
 }
+
 .customer p {
   color: #97a4ae;
   font-weight: 500;
   font-size: 1.1rem;
 }
+
 .customer h4 {
   color: #eceded;
   font-weight: 700;
   font-size: 1.1rem;
 }
+
 .customer h4::after {
   content: "AppName";
   color: #1cb58a;
 }
-.customer hr {
-  background-color: rgb(88, 85, 85);
-}
 
 /*******social section***********/
-.social-dashbord {
-  padding: 5rem 0rem;
-}
 .social-title p {
   font-weight: 600;
   color: #95a5a6;
 }
+
 .socialMedia {
   padding: 1rem 1.7rem;
   background-color: #25282c;
   color: #fff;
-  transition: 0.8 all ease-in-out;
-  -webkit-transition: 0.8 all ease-in-out;
-  -moz-transition: 0.8 all ease-in-out;
-  -ms-transition: 0.8 all ease-in-out;
-  -o-transition: 0.8 all ease-in-out;
+  transition: .3s all ease-in-out;
+  -webkit-transition: .3s all ease-in-out;
+  -moz-transition: .3s all ease-in-out;
+  -ms-transition: .3s all ease-in-out;
+  -o-transition: .3s all ease-in-out;
 }
+
 .news1,
 .news2 {
   border-top: 5px solid #0f2368;
 }
+
 .news3 {
   border-top: 5px solid #b12f7a;
 }
+
 .news4 {
   border-top: 5px solid #da3434;
 }
+
 .socialMedia:hover {
   transform: scale(0.9);
   -webkit-transform: scale(0.9);
@@ -253,9 +297,11 @@ nav img {
   -ms-transform: scale(0.9);
   -o-transform: scale(0.9);
 }
+
 .socialMedia .fa-facebook-f {
   color: #fff;
 }
+
 .socialMedia .fa-facebook-f::after {
   content: "@YoussefAshraf";
   color: #fff;
@@ -263,6 +309,7 @@ nav img {
   margin: 5px;
   text-transform: lowercase;
 }
+
 .socialMedia .fa-twitter::after {
   content: "@MohamedKhaled";
   color: #fff;
@@ -270,6 +317,7 @@ nav img {
   margin: 5px;
   text-transform: lowercase;
 }
+
 .socialMedia .fa-instagram::after {
   content: "@YoussefAshraf";
   color: #fff;
@@ -277,6 +325,7 @@ nav img {
   margin: 5px;
   text-transform: lowercase;
 }
+
 .socialMedia .fa-linkedin-in::after {
   content: "@MohamedKhaled";
   color: #fff;
@@ -284,37 +333,45 @@ nav img {
   margin: 5px;
   text-transform: lowercase;
 }
+
 .socialMedia h1 {
   color: #eceded;
   font-weight: 700;
   font-size: 2.2rem;
 }
+
 .socialMedia div p {
   color: #353838;
   letter-spacing: 6px;
   text-transform: uppercase;
 }
+
 .socialMedia .increased {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #5658dd;
 }
+
 .Overview-header,
 .Overview-footer {
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .Overview-header h6 {
   font-weight: 600;
   color: #63646b;
 }
+
 .Overview-header i {
   color: #4c5883;
 }
+
 .fa-caret-up {
   color: #0f2368;
 }
+
 .fa-caret-up::after {
   content: "3 %";
   color: #b12f7a;
@@ -322,20 +379,17 @@ nav img {
   margin: 0px 5px;
 }
 
-.Overview-items {
-  flex-wrap: nowrap;
-}
 .Overview-Parent {
-  padding: 1rem 1.7rem;
-  margin: 0px 2px;
+  padding: 1rem;
   border-bottom: 5px solid #942c5c;
   background-color: #25282c;
-  transition: 0.8 all ease-in-out;
-  -webkit-transition: 0.8 all ease-in-out;
-  -moz-transition: 0.8 all ease-in-out;
-  -ms-transition: 0.8 all ease-in-out;
-  -o-transition: 0.8 all ease-in-out;
+  transition: .3s all ease-in-out;
+  -webkit-transition: .3s all ease-in-out;
+  -moz-transition: .3s all ease-in-out;
+  -ms-transition: .3s all ease-in-out;
+  -o-transition: .3s all ease-in-out;
 }
+
 .Overview-Parent:hover {
   transform: scale(0.9);
   -webkit-transform: scale(0.9);
@@ -343,10 +397,67 @@ nav img {
   -ms-transform: scale(0.9);
   -o-transform: scale(0.9);
 }
+
+/****team section**********/
+.team__member {
+  padding: 1.5rem;
+  border: 1px solid rgb(88, 85, 85);
+  border-radius: 5px;
+}
+
+.team__member--image {
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.team__member--specialty {
+  display: block;
+  color: rgb(204, 203, 203);
+  text-transform: capitalize;
+}
+
+.team__member--text {
+  color: rgb(204, 203, 203);
+}
+
+.team__member--social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team__member--social a {
+  display: inline-block;
+  background-color: #5658dd;
+  color: #fff;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.team__member--social a:not(:last-of-type) {
+  margin-right: .8rem;
+}
+
+.team__member--social a:hover {
+  background-color: #fff;
+  color: #5658dd;
+}
+
 /******footer***************/
 footer {
   padding: 0;
 }
+
 footer svg {
   fill: #282c30;
   transform: translateY(80px);
@@ -362,49 +473,70 @@ footer .social {
   justify-content: center;
   background-color: #282c30;
 }
+
 footer .social a {
   margin: 15px;
   font-size: 35px;
   color: #fff;
   z-index: 50;
 }
+
 /*****end social media dashbord*******/
+.title p {
+  min-width: 60%;
+  color: #97a4ae;
+  font-size: 1.3rem;
+  font-weight: 400;
+  word-spacing: 0.01rem;
+}
+
+hr {
+  background-color: rgb(88, 85, 85);
+}
 
 /*****Responsive********/
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 400px;
   }
+
   .modal-dialog .modal-content {
     padding: 1rem;
   }
 }
 
 @media (max-width: 991px) {
+  html {
+    font-size: 56%;
+  }
+
   .about .leftside-title {
     text-align: center;
   }
-  .about .leftside-title p,
-  .about .title p,
-  .customer-title p {
+
+  .title p {
     text-align: center;
     min-width: 100%;
   }
+
   .banner p {
     min-width: 87%;
   }
+
   .customer {
     margin: 1rem 0rem;
   }
+
   .socialMedia {
     margin: 1rem 0rem;
   }
+
   .Overview-items {
     width: 100%;
-    flex-wrap: wrap;
     row-gap: 10px;
     margin: 0 auto;
   }
+
   footer svg {
     transform: translateY(60px);
     -webkit-transform: translateY(60px);
@@ -413,5 +545,22 @@ footer .social a {
     -o-transform: translateY(60px);
     height: 200px;
   }
- 
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 48%;
+  }
 }

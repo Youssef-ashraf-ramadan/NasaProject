@@ -14,6 +14,7 @@
     <!------animate css-------->
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!------------font awesome---------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!---------main css-------------->
@@ -23,9 +24,11 @@
 
 <body>
     <!------preloader----------->
-    <div id="preloader">
+    <!-- <div id="preloader"></div> -->
 
-    </div>
+    <!------Scroll to top button----------->
+    <button class="scroll-to-top-btn">&ShortUpArrow;</button>
+
     <!---------header and navbar-------------->
     <header>
         <!----------start of navbar---------------------->
@@ -38,17 +41,12 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-
                     <li class="nav-item">
                         <a class="nav-link" href="#">Documentation</a>
                     </li>
-
-
                 </ul>
-
                 <button class="btn  my-2 my-sm-0 btn-round" type="button" data-toggle="modal"
                     data-target="#loginModal">Sign up</button>
-
             </div>
         </nav>
 
@@ -108,46 +106,36 @@
             </div>
         </div>
         <!---------end of signup modal -------------------->
-
         <!----------end of navbar---------------------->
 
         <!------banner section---------------------->
-
         <section class="banner container align-items-center mt-5 text-center">
             <h1 class="text-light display-4 pt-5">Landing template for </h1>
-            <p class="text-center  mx-auto">Our landing page template works on all devices, so you only have to set
-                is
-                up once,
-                and get beautiful
-                results forever</p>
-
+            <p class="text-center  mx-auto">Our landing page template works on all devices, so you only have to set is
+                up once, and get beautiful results forever</p>
             <div class="row">
                 <div class="col-md-12 ">
                     <div class="buttons py-2">
                         <button class="btn btn-primary" type="submit">Get Started</button>
                         <button class="btn btn-primary" type="submit">View on Github</button>
-
                     </div>
                     <img class="img-fluid w-75 my-5" src="images/17536c68-10f0-4d4a-aef4-c2db1db10ced_1920x1080.jpg"
                         alt="error 404">
-                    <h1 class="text-light pt-5 text2 wow slideInLeft">Build up the whole picture</h1>
-                    <p class="mx-auto w-75 py-2 wow slideInLeft ">Our landing page template works on all devices, so
-                        you
-                        only have to set
-                        is up once, and get beautiful results forever
-                    </p>
                 </div>
             </div>
-
         </section>
         <!------end of banner section---------------------->
     </header>
-
     <!---------end of header and navbar-------------->
 
     <!-------------start of section features----------------->
     <section class="features my-5 wow slideInLeft" data-wow-duration="2s">
         <div class="container">
+            <div class="title text-center wow animate__bounce">
+                <h2 class="text-light text2 wow slideInLeft">Build up the whole picture</h2>
+                <p class="mx-auto w-75 py-2 wow slideInLeft ">Our landing page template works on all devices, so you
+                    only have to set is up once, and get beautiful results forever</p>
+            </div>
             <div class="row">
                 <div class="col-md-4">
                     <div class="one text-center align-items-center" title="Robust Workflow">
@@ -211,11 +199,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="title text-center wow animate__bounce">
-                        <h1 class="text-light pt-5 text2">Workflow that just works</h1>
+                        <h2 class="text-light text2">Workflow that just works</h2>
                         <p class="mx-auto w-75 py-2">Our landing page template works on all devices, so you only have to
-                            set
-                            is up once, and get beautiful results forever - Enjoy livetime access.
-                        </p>
+                            set is up once, and get beautiful results forever - Enjoy livetime access.</p>
                     </div>
                 </div>
             </div>
@@ -224,10 +210,9 @@
                     <div class="leftside-title py-2 wow slideInLeft">
                         <h6>lightining fast workflow</h6>
                         <h1 class="text-light text3">Data-driven insights</h1>
-                        <p class=" w-75 py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsum. Sit
+                        <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsum. Sit
                             doloremque accusamus nostrum, aliquam id numquam culpa consequuntur eaque deleniti dicta
-                            reiciendis adipisci asperiores, placeat repellat perferendis veniam vel.
-                        </p>
+                            reiciendis adipisci asperiores, placeat repellat perferendis veniam vel.</p>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -237,48 +222,67 @@
                 </div>
             </div>
             <div class="row py-5">
-
-                <div class="col-md-6">
+                <div class="col-md-6 order-2 order-md-1">
                     <div class="rightside-img py-2 wow slideInLeft">
                         <img src="images/WB04GJ56M.png" class="img-fluid " alt="error 404">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 order-1 order-md-2">
                     <div class="leftside-title py-2 wow slideInRight">
                         <h6>lightining fast workflow</h6>
                         <h1 class="text-light text3">Data-driven insights</h1>
-                        <p class=" w-75 py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsum. Sit
+                        <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, ipsum. Sit
                             doloremque accusamus nostrum, aliquam id numquam culpa consequuntur eaque deleniti dicta
-                            reiciendis adipisci asperiores, placeat repellat perferendis veniam vel.
-                        </p>
+                            reiciendis adipisci asperiores, placeat repellat perferendis veniam vel.</p>
                     </div>
                 </div>
             </div>
             <hr>
         </div>
-
     </section>
     <!----------end of section about--------------->
 
+    <!----------start of counter--------------->
+    <section class="counter-section my-5">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-6 col-md-3 mb-5 mb-md-0 text-center wow slideInLeft">
+                    <span class="counter" data-target="286">0</span>
+                    <h3 class="counter-heading">Web Designers</h3>
+                </div>
+                <div class="col-6 col-md-3 mb-5 mb-md-0 text-center wow slideInDown">
+                    <span class="counter" data-target="445">0</span>
+                    <h3 class="counter-heading">Apps Developed</h3>
+                </div>
+                <div class="col-6 col-md-3 mb-5 mb-md-0 text-center wow slideInDown">
+                    <span class="counter" data-target="1560">0</span>
+                    <h3 class="counter-heading">Happy Clients</h3>
+                </div>
+                <div class="col-6 col-md-3 mb-5 mb-md-0 text-center wow slideInRight">
+                    <span class="counter" data-target="3825">0</span>
+                    <h3 class="counter-heading">Websites Designed</h3>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <!----------end of counter--------------->
+
     <!-------------Customer testidivomonial--------------------->
-
-
     <section class="testidivomonial my-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="customer-title text-center wow animate__bounce">
-                        <h1 class="text-light pt-5 ">Customer testidivomonial</h1>
+                    <div class="title text-center wow animate__bounce">
+                        <h2 class="text-light text2">Customer testimonials</h2>
                         <p class="mx-auto w-75 py-2">Our landing page template works on all devices, so you only have to
-                            set
-                            is up once, and get beautiful results forever - Enjoy livetime access.
-                        </p>
+                            set is up once, and get beautiful results forever - Enjoy livetime access.</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row py-5">
                 <div class="col-md-4">
-                    <div class="customer  wow slideInLeft"  title="YoussefAshraf">
+                    <div class="customer  wow slideInLeft" title="YoussefAshraf">
                         <i class="fas fa-quote-left"></i>
                         <p>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eveniet blanditiis hic
                             cum ad maiores quae delectus numquam facere consequuntur? Animi nesciunt odio itaque quia
@@ -308,24 +312,23 @@
                     </div>
                 </div>
             </div>
-
+            <hr>
         </div>
     </section>
+
     <!--------social media dashbord------------->
     <section class="social-dashbord my-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="customer-title text-center wow animate__bounce">
-                        <h1 class="text-light pt-5 ">Social media overview</h1>
+                    <div class="title text-center wow animate__bounce">
+                        <h2 class="text-light text2">Social media overview</h2>
                         <p class="mx-auto w-75 py-2">Our landing page template works on all devices, so you only have to
-                            set
-                            is up once, and get beautiful results forever - Enjoy livetime access.
-                        </p>
+                            set is up once, and get beautiful results forever - Enjoy livetime access.</p>
                     </div>
                 </div>
             </div>
-            <div class="row my-5 pt-5">
+            <div class="row py-4">
                 <div class="col-md-12">
                     <div class="social-title  wow animate__bounce">
                         <h5 class="text-light pt-5 ">Social Media Dashboard </h5>
@@ -375,7 +378,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row my-5 pt-2">
+            <div class="row my-4 pt-2">
                 <div class="col-md-12">
                     <div class="social-title  wow animate__bounce">
                         <h5 class="text-light pt-5 ">Overview - Today</h5>
@@ -383,113 +386,203 @@
                 </div>
             </div>
             <div class="row Overview-items d-flex">
-                <div class="col-md-3  Overview-Parent  wow animate__bounce" title="Page views 87">
-                    <div class="Overview-header d-flex my-2">
-                        <h6>Page Views</h6>
-                        <i class="fab fa-facebook-f"></i>
+                <div class="col-md-3  wow animate__bounce" title="Page views 87">
+                    <div class="Overview-Parent">
 
-                    </div>
-                    <div class="Overview-footer d-flex my-4 ">
-                        <h5 class="text-light">87</h5>
-                        <i class="fas fa-caret-up d-flex align-items-center my-1"></i>
-
-                    </div>
-                </div>
-                <div class="col-md-3 Overview-Parent  wow animate__bounce" title="Page views 52">
-                    <div class="Overview-header d-flex my-2">
-                        <h6>Page Views</h6>
-                        <i class="fab fa-twitter"></i>
-
-                    </div>
-                    <div class="Overview-footer d-flex my-4 ">
-                        <h5 class="text-light">52</h5>
-                        <i class="fas fa-caret-up d-flex align-items-center my-1"></i>
-
+                        <div class="Overview-header d-flex my-2">
+                            <h6>Page Views</h6>
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="Overview-footer d-flex my-4 ">
+                            <h5 class="text-light">87</h5>
+                            <i class="fas fa-caret-up d-flex align-items-center my-1"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 Overview-Parent  wow animate__bounce" title="Likes 5462">
-                    <div class="Overview-header d-flex my-2">
-                        <h6>Likes</h6>
-                        <i class="fab fa-instagram"></i>
+                <div class="col-md-3 wow animate__bounce" title="Page views 52">
+                    <div class="Overview-Parent">
 
-                    </div>
-                    <div class="Overview-footer d-flex my-4 ">
-                        <h5 class="text-light">5462</h5>
-                        <i class="fas fa-caret-up d-flex align-items-center my-1"></i>
-
+                        <div class="Overview-header d-flex my-2">
+                            <h6>Page Views</h6>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="Overview-footer d-flex my-4 ">
+                            <h5 class="text-light">52</h5>
+                            <i class="fas fa-caret-up d-flex align-items-center my-1"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 Overview-Parent  wow animate__bounce" title="Likes 52k">
-                    <div class="Overview-header d-flex my-2">
-                        <h6> Likes</h6>
-                        <i class="fab fa-github"></i>
+                <div class="col-md-3 wow animate__bounce" title="Likes 5462">
+                    <div class="Overview-Parent">
 
+                        <div class="Overview-header d-flex my-2">
+                            <h6>Likes</h6>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="Overview-footer d-flex my-4 ">
+                            <h5 class="text-light">5462</h5>
+                            <i class="fas fa-caret-up d-flex align-items-center my-1"></i>
+                        </div>
                     </div>
-                    <div class="Overview-footer d-flex my-4 ">
-                        <h5 class="text-light">52k</h5>
-                        <i class="fas fa-caret-up d-flex align-items-center my-1"></i>
+                </div>
+                <div class="col-md-3 wow animate__bounce" title="Likes 52k">
+                    <div class="Overview-Parent">
 
+                        <div class="Overview-header d-flex my-2">
+                            <h6> Likes</h6>
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="Overview-footer d-flex my-4 ">
+                            <h5 class="text-light">52k</h5>
+                            <i class="fas fa-caret-up d-flex align-items-center my-1"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row Overview-items  d-flex my-4">
-                <div class="col-md-3 Overview-Parent  wow animate__bounce" title="Page views 87">
-                    <div class="Overview-header d-flex my-2">
-                        <h6>Page Views</h6>
-                        <i class="fab fa-facebook-f"></i>
+            <div class="row Overview-items pb-5 d-flex my-4">
+                <div class="col-md-3 wow animate__bounce" title="Page views 87">
+                    <div class="Overview-Parent">
 
-                    </div>
-                    <div class="Overview-footer d-flex my-4 ">
-                        <h5 class="text-light">87</h5>
-                        <i class="fas fa-caret-up d-flex align-items-center my-1"></i>
-
-                    </div>
-                </div>
-                <div class="col-md-3 Overview-Parent  wow animate__bounce" title="Page views 52">
-                    <div class="Overview-header d-flex my-2">
-                        <h6>Page Views</h6>
-                        <i class="fab fa-twitter"></i>
-
-                    </div>
-                    <div class="Overview-footer d-flex my-4 ">
-                        <h5 class="text-light">52</h5>
-                        <i class="fas fa-caret-up d-flex align-items-center my-1"></i>
-
+                        <div class="Overview-header d-flex my-2">
+                            <h6>Page Views</h6>
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="Overview-footer d-flex my-4 ">
+                            <h5 class="text-light">87</h5>
+                            <i class="fas fa-caret-up d-flex align-items-center my-1"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 Overview-Parent  wow animate__bounce"  title="Likes 5462">
-                    <div class="Overview-header d-flex my-2">
-                        <h6>Likes</h6>
-                        <i class="fab fa-linkedin-in"></i>
+                <div class="col-md-3 wow animate__bounce" title="Page views 52">
+                    <div class="Overview-Parent">
 
-                    </div>
-                    <div class="Overview-footer d-flex my-4 ">
-                        <h5 class="text-light">5462</h5>
-                        <i class="fas fa-caret-up d-flex align-items-center my-1"></i>
-
+                        <div class="Overview-header d-flex my-2">
+                            <h6>Page Views</h6>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="Overview-footer d-flex my-4 ">
+                            <h5 class="text-light">52</h5>
+                            <i class="fas fa-caret-up d-flex align-items-center my-1"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 Overview-Parent  wow animate__bounce"  title="Likes 52k">
-                    <div class="Overview-header d-flex my-2">
-                        <h6> TotalViews</h6>
-                        <i class="fab fa-youtube"></i>
+                <div class="col-md-3 wow animate__bounce" title="Likes 5462">
+                    <div class="Overview-Parent">
 
+                        <div class="Overview-header d-flex my-2">
+                            <h6>Likes</h6>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="Overview-footer d-flex my-4 ">
+                            <h5 class="text-light">5462</h5>
+                            <i class="fas fa-caret-up d-flex align-items-center my-1"></i>
+                        </div>
                     </div>
-                    <div class="Overview-footer d-flex my-4 ">
-                        <h5 class="text-light">52k</h5>
-                        <i class="fas fa-caret-up d-flex align-items-center my-1"></i>
+                </div>
+                <div class="col-md-3 wow animate__bounce" title="Likes 52k">
+                    <div class="Overview-Parent">
 
+                        <div class="Overview-header d-flex my-2">
+                            <h6>TotalViews</h6>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="Overview-footer d-flex my-4 ">
+                            <h5 class="text-light">52k</h5>
+                            <i class="fas fa-caret-up d-flex align-items-center my-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <!-- End Social Media dashbord -->
+
+    <!----------- start team section ----------------->
+    <section class="team-section mt-5">
+        <div class="container">
+            <div class="title text-center wow animate__bounce">
+                <h2 class="text-light text2">Our team</h2>
+                <p class="mx-auto w-75 py-2">Our landing page template works on all devices, so you only have to
+                    set is up once, and get beautiful results forever - Enjoy livetime access.</p>
+            </div>
+
+            <div class="row pt-5">
+                <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0 wow slideInLeft">
+                    <div class="team__member text-center">
+                        <img src="images/team1.jpg" alt="team" class="team__member--image mb-3">
+                        <h3 class="text-light text-center mb-2">Mohamed Khaled</h3>
+                        <span class="team__member--specialty mb-3">CEO founder</span>
+                        <p class="team__member--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            praesentium quisquam</p>
+                        <div class="team__member--social">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0 wow slideInDown">
+                    <div class="team__member text-center">
+                        <img src="images/team2.jpg" alt="team" class="team__member--image mb-3">
+                        <h3 class="text-light text-center mb-2">Youssef Ashraf</h3>
+                        <span class="team__member--specialty mb-3">Accountant</span>
+                        <p class="team__member--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            praesentium quisquam</p>
+                        <div class="team__member--social">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 mb-4 mb-sm-0 wow slideInDown">
+                    <div class="team__member text-center">
+                        <img src="images/team1.jpg" alt="team" class="team__member--image mb-3">
+                        <h3 class="text-light text-center mb-2">Mohamed Khaled</h3>
+                        <span class="team__member--specialty mb-3">CEO founder</span>
+                        <p class="team__member--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            praesentium quisquam</p>
+                        <div class="team__member--social">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 wow slideInRight">
+                    <div class="team__member text-center">
+                        <img src="images/team2.jpg" alt="team" class="team__member--image mb-3">
+                        <h3 class="text-light text-center mb-2">Youssef Ashraf</h3>
+                        <span class="team__member--specialty mb-3">Accountant</span>
+                        <p class="team__member--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            praesentium quisquam</p>
+                        <div class="team__member--social">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Social Media dashbord -->
+    <!-----------end team section ----------------->
 
     <!--------start footer-------------->
-
     <footer>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path  fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,186.7C384,181,480,139,576,133.3C672,128,768,160,864,160C960,160,1056,128,1152,101.3C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill-opacity="1"
+                d="M0,128L48,144C96,160,192,192,288,186.7C384,181,480,139,576,133.3C672,128,768,160,864,160C960,160,1056,128,1152,101.3C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
         <div class="social">
             <a href="https://github.com/Youssef-ashraf-ramadan"><i class="fab fa-facebook"></i></a>
             <a href="https://github.com/Youssef-ashraf-ramadan"><i class="fab fa-instagram"></i></a>
@@ -497,22 +590,20 @@
             <a href="https://github.com/Youssef-ashraf-ramadan"><i class="fab fa-github"></i></a>
             <a href="https://github.com/Youssef-ashraf-ramadan"><i class="fab fa-youtube"></i></a>
             <a href="https://github.com/Youssef-ashraf-ramadan"><i class="fab fa-telegram"></i></a>
-
         </div>
     </footer>
     <!--------end footer-------------->
-    
-    <!-----------scripts ----------------->
 
+    <!-----------scripts ----------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
-    </script>
+        </script>
 
     <!------wow js------------>
 
