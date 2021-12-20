@@ -403,6 +403,11 @@ nav img {
   padding: 1.5rem;
   border: 1px solid rgb(88, 85, 85);
   border-radius: 5px;
+  transition: .3s;
+}
+
+.team__member:hover {
+  transform: scale(0.95);
 }
 
 .team__member--image {
