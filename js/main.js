@@ -6,6 +6,12 @@ $(document).ready(function() {
 });
 new WOW().init();
 
+const themeIcon = document.querySelector('.fa-moon');
+themeIcon.addEventListener('click', function() {
+  document.body.classList.toggle('dark-theme');
+  this.classList.toggle('fa-sun');
+});
+
 const banner = document.querySelector('.banner');
 const scrollToTopBtn = document.querySelector('.scroll-to-top-btn');
 // Scroll to top btn
